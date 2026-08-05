@@ -1,0 +1,22 @@
+# Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# Logs
+*.log
+
+# lib (JADE JAR — trop lourd pour GitHub)
+lib/
+
+# OS
+.DS_Store
+Thumbs.db
