@@ -25,6 +25,17 @@
       <version>4.9.8</version>
     </dependency>
 
+    <!-- JADE multi-agent framework.
+         The JAR is not redistributed in this repository: download
+         de.enflexit.jade-4.6.1.jar (see README) and place it in lib/ -->
+    <dependency>
+      <groupId>de.enflexit</groupId>
+      <artifactId>jade</artifactId>
+      <version>4.6.1</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/de.enflexit.jade-4.6.1.jar</systemPath>
+    </dependency>
+
     <!-- JUnit -->
     <dependency>
       <groupId>junit</groupId>

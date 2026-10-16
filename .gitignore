@@ -1,9 +1,18 @@
 # Maven
 target/
+
+# Compiled files
 *.class
-*.jar
 *.war
 *.ear
+
+# JADE JAR (download separately, see README)
+lib/
+*.jar
+
+# JADE runtime files generated at startup (contain machine name)
+APDescription.txt
+MTPs-*.txt
 
 # Eclipse
 .classpath
@@ -13,9 +22,6 @@ target/
 
 # Logs
 *.log
-
-# lib (JADE JAR — trop lourd pour GitHub)
-lib/
 
 # OS
 .DS_Store

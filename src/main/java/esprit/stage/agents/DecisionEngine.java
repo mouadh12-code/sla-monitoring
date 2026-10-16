@@ -14,11 +14,10 @@ public class DecisionEngine {
     // ── RÈGLES GAS ────────────────────────────────────────────────────────
 
     public static String analyzeGas(float gasConsumed, float maxGas) {
-        float percentage = (gasConsumed / maxGas) * 100;
-
-        if (gasConsumed <= maxGas)      return "OK";
-        else if (percentage <= 120)     return "WARNING";
-        else                            return "CRITICAL";
+        // Compare to the threshold directly (avoids float rounding on the 120% boundary)
+        if (gasConsumed <= maxGas)          return "OK";
+        else if (gasConsumed <= maxGas * 1.2f) return "WARNING";
+        else                                return "CRITICAL";
     }
 
     // ── RÈGLES TEMPS DE RÉPONSE ───────────────────────────────────────────
